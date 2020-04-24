@@ -16,66 +16,66 @@ List of contents
 6. Contact information
 7. Credits and acknowledgements
 
+-------------------------------------------------
 
+1. Configuration instructions  
+	Requirements: a Linux terminal, i.e PuTTY, KiTTY,...  
 
-1. Configuration instructions
-	Requirements: a Linux terminal, i.e PuTTY, KiTTY,...
-
-2. Installation instructions
-	# Follow these steps to install the application:
-	# Check the whether you have git already, simply type
-		git --version
-	# If the result is "git is not recognized.." then install it:
-		sudo apt-get install git
-	# Install the build requisites:
-		sudo apt-get install make
-		sudo apt-get install gcc		
-	# Now clone this repository by type in:
-		git clone https://github.com/Labychu/AppDev.git
-	# Change directory to /AppDev/ :
-		cd AppDev
-	# Build from source:
-		make
-	# Done!
-
-3.Operating instructions
-	# Build, compile after modify files:
-		make
-	# Remove *.o and executable program:
-		make clean
-	# Zip all *.c, *.h and makefile files into sound.tar:
-		make zip
-	# Execute program after build:
-		./proggy
-
-4. File manifest
-
-	List of files:
-	README.md		This file.
-	main.c			Contains the main function.
-	screen.c		Contains screen manipulations functions.
+2. Installation instructions  
+	# Follow these steps to install the application:  
+	# Check the whether you have git already, simply type  
+		git --version  
+	# If the result is "git is not recognized.." then install it:  
+		sudo apt-get install git  
+	# Install the build requisites:  
+		sudo apt-get install make  
+		sudo apt-get install gcc  		
+	# Now clone this repository by type in:  
+		git clone https://github.com/Labychu/AppDev.git  
+	# Change directory to /AppDev/ :  
+		cd AppDev  
+	# Build from source:  
+		make  
+	# Done!  
+  
+3.Operating instructions  
+	# Build, compile after modify files:  
+		make  
+	# Remove *.o and executable program:  
+		make clean  
+	# Zip all *.c, *.h and makefile files into sound.tar:  
+		make zip  
+	# Execute program after build:  
+		./proggy  
+  
+4. File manifest  
+  
+	List of files:  
+	README.md		This file.  
+	main.c			Contains the main function.  
+	screen.c		Contains screen manipulations functions.  
 	screen.h		Contains constant definitions and function declarations 
-					used in screen.c.
-	sound.c			Contains *.wav file handling functions.
+					used in screen.c.  
+	sound.c			Contains *.wav file handling functions.  
 	sound.h			Contains custom datatype definitions and 
-					function declarations used in sound.c 
+					function declarations used in sound.c  
 	testcurl.c		Contains code which can send information to a specific
-					php page.
+					php page.  
 	makefile		Contains the shorter version for the gcc and others command
-					such as rm and tar.
+					such as rm and tar.  
 	testscreen.c	Contains a lot of animations and function that we can play and 
-					manipulate alongside with those in screen.c. 
+					manipulate alongside with those in screen.c.  
 	comm.c			Contains code for the posting and responding to a specific 
-					php server or website. 
+					php server or website.  
 	comm.h			Contains constant definitions and function declarations
-					at comm.c.
-
-5. Licenses and Copyright 
-	This application follows GPLv2 copyright. 
-
-6. Contact information
-	Gmail: demen2001@gmail.com
-	Github link: https://github.com/Labychu
-
-7. Credits and acknowledgements
-	Written by Thi Dinh under prof. Gao Chao's instructions.
+					at comm.c.  
+  
+5. Licenses and Copyright   
+	This application follows GPLv2 copyright.  
+  
+6. Contact information  
+	Gmail: demen2001@gmail.com  
+	Github link: https://github.com/Labychu  
+  
+7. Credits and acknowledgements  
+	Written by Thi Dinh under prof. Gao Chao's instructions.  
