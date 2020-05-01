@@ -1,6 +1,12 @@
 // This header file contains constant definitions and function declarations
 // for processing sound, specifically .wav files.
 
+#include "screen.h"
+//#define SDEBUG
+#define SAMPLERATE 16000
+#define BARS 160
+#define SIZE 500
+
 typedef struct {
 	char chunkID[4]; // should always be "RIFF"
 	int chunkSize;  // indicates how big the sound data is 
@@ -22,3 +28,5 @@ typedef struct {
 WAVHeader readWAVHeader(FILE *);
 
 void displayWAVHeader(WAVHeader); 
+
+void WAVData(WAVHeader, FILE *);
