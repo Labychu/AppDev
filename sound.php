@@ -1,8 +1,11 @@
 <?php
+// There is a exact copy of this file (exclue the comment line)
+// in my public_html folder in my U:/
+$maxVal = $_POST['maxVal'];
+$peakNum = $_POST['peakNum'];
 $ID = $_POST['ID'];
-$name = $_POST['name'];
 $today = date("Y-m-d H:i:s");
-$record = $today . ", " . $ID . ", " . $name . "\n";
+$record = $today . ", " . $maxVal . ", ". $peakNum. ", " . $ID . "\n";
 
 $file = "sound.log";
 if (file_exists($file))

@@ -5,31 +5,25 @@
 #include "sound.h"
 
 int main(void) {
-	Position cur = getScreenSize();
-	char postdata[1000];
-	sprintf(postdata, "row=%d&col=%d&id=e1900323", cur.row, cur.col);
-	sendpost(URL, postdata);
 	gotoXY(1, 1);
 	clrscr();
-	printf("Screen size: row=%d, col=%d\n", cur.row, cur.col); 
+	printf("Screen size: row=%d, col=%d\n", cur.row, cur.col);
 	printf("Today we will make some animations. Press any key to continue\n");
 	getchar();
 	getchar();
-	/* 
+	/*
 	int ff, bb;
-	float step = (float)cur.col / cur.row;  
-	
+	float step = (float)cur.col / cur.row;
 	for (int i = 1; i <= cur.row; i++) {
 		clrscr();
 		setFgColor(RED);
 		drawRect(i, i * 3, 2, 4);
-		setFgColor(GRN);  
+		setFgColor(GRN);
 		gotoXY(cur.row - i, (i - 1) * step + 1);
 		printf("HELLO\n");
-		usleep(500000);  
+		usleep(500000);
 	}
-	
-	getchar(); 
+	getchar();
 	resetColor();
 	*/
 	clrscr();

@@ -29,7 +29,7 @@ void gotoXY(int row, int col) {
 
 void drawBar(int col, int height) {
 	for (int i = 0; i < height; i++) {
-		gotoXY(i, col);
+		gotoXY(30 - i, col);
 		#ifdef UNICODE
 			printf("%s", BAR);
 		#else 
@@ -58,7 +58,7 @@ Position getScreenSize(void) {
 	// if  a query string "0x1B[6n" is issued
 
 	Position pos;
-	char *ret;  // an empty string to get report
+	char ret[100] = "\0";  // an empty string to get report
 	gotoXY(999, 999);
 	printf("%c[6n", ESC);
 	scanf("%s", ret);  // Get the report from the terminal
@@ -69,7 +69,7 @@ Position getScreenSize(void) {
 	if (strlen(ret) > 0) {  // if we got the cursor pos report
 		char dumb; // dummy char to consume excessive symbols
 		int row, col;
-		sscanf(ret, "%c%c%d%c%d%c", &dumb, &dumb, &row, &dumb, &col, &row);
+		sscanf(ret, "%c%c%d%c%d%c", &dumb, &dumb, &row, &dumb, &col, &dumb);
 		pos.row = row;
 		pos.col = col;
 	}

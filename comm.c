@@ -4,10 +4,10 @@
 
 void sendpost(char *url, char *post)
 {
-	CURL *curl; 
-	CURLcode res; 
+	CURL *curl;
+	CURLcode res;
 
-	curl_global_init(CURL_GLOBAL_ALL); 
+	curl_global_init(CURL_GLOBAL_ALL);
 
 	curl = curl_easy_init();
 	if(curl)
@@ -17,10 +17,10 @@ void sendpost(char *url, char *post)
 		res = curl_easy_perform(curl);
 		if(res != CURLE_OK)
 		{
-			fprintf(stderr, "curl_easy_perform() failed:%s\n", 
+			fprintf(stderr, "curl_easy_perform() failed:%s\n",
 			curl_easy_strerror(res));
 		}
 		curl_easy_cleanup(curl);
 	}
-	curl_global_cleanup(); 
+	curl_global_cleanup();
 }
