@@ -24,9 +24,7 @@ List of contents
 
 ## 2. Installation instructions  
 	Follow these steps to install the application:  
-	Check the whether you have git already, simply type:  
-		git --version  
-	If the result is "git is not recognized.." then install it:  
+	If you don't have git then install git:  
 		sudo apt-get install git  
 	Install the build requisites:  
 		sudo apt-get install make  
@@ -69,7 +67,7 @@ List of contents
 	This application follows GPLv2 copyright.  
   
 ## 6. Contact information  
-	Gmail:			demen2001@gmail.com  
+	Gmail:	demen2001@gmail.com  
 	Github link:	https://github.com/Labychu  
   
 ## 7. Credits and acknowledgements  
