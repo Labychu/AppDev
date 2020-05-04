@@ -20,6 +20,7 @@ List of contents
 
 ## 1. Configuration instructions  
 	Requirements: a Linux terminal, i.e PuTTY, KiTTY,...  
+	You must also have a .wav file named test.wav. This is the file which the program will read.
 
 ## 2. Installation instructions  
 	Follow these steps to install the application:  
@@ -54,10 +55,10 @@ List of contents
 	README.md		This file.  
 	main.c			Contains the main function.  
 	screen.c		Contains screen manipulations functions.  
-	screen.h		Contains constant definitions and function declarations 
+	screen.h		Contains constant definitions and function declarations
 					used in screen.c.  
 	sound.c			Contains *.wav file handling functions.  
-	sound.h			Contains custom datatype definitions and 
+	sound.h			Contains custom datatype definitions and
 					function declarations used in sound.c  
 	testcurl.c		Contains code which can send information to a specific
 					php page.  
@@ -65,11 +66,12 @@ List of contents
 					such as rm and tar.  
 	testscreen.c	Contains a lot of animations and function that we can play and 
 					manipulate alongside with those in screen.c.  
-	comm.c			Contains code for the posting and responding to a specific 
+	comm.c			Contains code for the posting and responding to a specific
 					php server or website.  
 	comm.h			Contains constant definitions and function declarations
 					at comm.c.
-	sound.php		Receive info from a pre-specified URL in comm.h 
+	sound.php		A copy of the real sound.php in pulic_html.
+					Receive info from a pre-specified URL in comm.h 
   
 ## 5. Licenses and Copyright   
 	This application follows GPLv2 copyright.  
