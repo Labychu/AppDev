@@ -24,7 +24,7 @@ List of contents
 
 ## 2. Installation instructions  
 	Follow these steps to install the application:  
-	Check the whether you have git already, simply type  
+	Check the whether you have git already, simply type:  
 		git --version  
 	If the result is "git is not recognized.." then install it:  
 		sudo apt-get install git  
@@ -60,7 +60,7 @@ List of contents
 	sound.h			Contains custom datatype definitions and function declarations used in sound.c  
 	testcurl.c		Contains code which can send information to a specific php page.  
 	makefile		Contains the shorter version for the gcc and others command such as rm and tar.  
-	testscreen.c	Contains a lot of animations and function that we can play and manipulate alongside with those in screen.c.  
+	testscreen.c		Contains a lot of animations and function that we can play and manipulate alongside with those in screen.c.  
 	comm.c			Contains code for the posting and responding to a specific php server or website.  
 	comm.h			Contains constant definitions and function declarations at comm.c.
 	sound.php		A copy of the real sound.php in pulic_html. Receive info from a pre-specified URL in comm.h 
